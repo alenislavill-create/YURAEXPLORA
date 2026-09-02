@@ -5,164 +5,177 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>YURAEXPLORA | Descubre Yura</title>
+    <title>YURAEXPLORA</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+
+            background-image:
+                linear-gradient(
+                    rgba(0, 0, 0, 0.35),
+                    rgba(0, 0, 0, 0.35)
+                ),
+                url("imagenes/FONDO PRINCPAL.jpeg");
+
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .inicio {
+            min-height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .contenido-inicio {
+            background: rgba(255, 255, 255, 0.90);
+            padding: 45px;
+            border-radius: 25px;
+            max-width: 750px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+        }
+
+        .contenido-inicio h1 {
+            font-size: 55px;
+            margin-bottom: 15px;
+        }
+
+        .contenido-inicio p {
+            font-size: 20px;
+            line-height: 1.6;
+        }
+
+        .botones {
+            margin-top: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .botones a {
+            text-decoration: none;
+            background: #7a5c3e;
+            color: white;
+            padding: 14px 22px;
+            border-radius: 12px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .botones a:hover {
+            transform: translateY(-3px);
+            opacity: 0.85;
+        }
+    </style>
+
 </head>
+
 
 <body>
 
-    <!-- MENÚ -->
-    <header>
 
-        <nav class="navbar">
+<header>
 
-            <a href="index.html" class="logo">
-                YURAEXPLORA
-            </a>
+    <nav class="navbar">
 
-            <ul class="menu">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="lugares.html">Lugares</a></li>
-                <li><a href="gastronomia.html">Gastronomía</a></li>
-                <li><a href="emprendimientos.html">Emprendimientos</a></li>
-                <li><a href="rutas.html">Rutas</a></li>
-            </ul>
+        <a href="index.html" class="logo">
+            YURAEXPLORA
+        </a>
 
-        </nav>
+        <ul class="menu">
 
-    </header>
+            <li>
+                <a href="index.html">Inicio</a>
+            </li>
+
+            <li>
+                <a href="lugares.html">Lugares</a>
+            </li>
+
+            <li>
+                <a href="gastronomia.html">Gastronomía</a>
+            </li>
+
+            <li>
+                <a href="emprendimientos.html">Emprendimientos</a>
+            </li>
+
+            <li>
+                <a href="rutas.html">Rutas</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
 
 
-    <!-- PORTADA -->
-    <section class="portada">
 
-        <div class="contenido-portada">
+<main>
 
-            <p class="subtitulo">DESCUBRE LA MAGIA DE</p>
+    <section class="inicio">
 
-            <h1>Yura</h1>
+        <div class="contenido-inicio">
+
+            <h1>YURAEXPLORA 🌿</h1>
 
             <p>
-                Descubre sus paisajes, atractivos turísticos,
-                naturaleza, gastronomía y mucho más.
+                Descubre lugares, sabores, emprendimientos
+                y rutas para conocer Yura.
             </p>
 
-            <a href="lugares.html" class="boton">
-                Explorar lugares
-            </a>
+
+            <div class="botones">
+
+                <a href="lugares.html">
+                    📍 Lugares
+                </a>
+
+                <a href="gastronomia.html">
+                    🍽️ Gastronomía
+                </a>
+
+                <a href="emprendimientos.html">
+                    🛍️ Emprendimientos
+                </a>
+
+                <a href="rutas.html">
+                    🗺️ Rutas
+                </a>
+
+            </div>
 
         </div>
 
     </section>
 
-
-    <!-- BIENVENIDA -->
-    <section class="presentacion">
-
-        <h2>¡Bienvenido a YURAEXPLORA!</h2>
-
-        <p>
-            Una plataforma para descubrir y conocer los lugares,
-            paisajes, gastronomía y emprendimientos de Yura.
-        </p>
-
-    </section>
+</main>
 
 
-    <!-- OPCIONES -->
-    <section class="categorias">
 
-        <h2>¿Qué deseas explorar?</h2>
+<footer>
 
+    <h3>YURAEXPLORA</h3>
 
-        <div class="tarjetas">
+    <p>
+        Descubre la magia de Yura.
+    </p>
 
+    <p>
+        © 2026 YURAEXPLORA
+    </p>
 
-            <!-- LUGARES -->
-            <a href="lugares.html" class="tarjeta">
-
-                <div class="icono">🏔️</div>
-
-                <h3>Lugares turísticos</h3>
-
-                <p>
-                    Descubre los paisajes y atractivos de Yura.
-                </p>
-
-            </a>
-
-
-            <!-- GASTRONOMÍA -->
-            <a href="gastronomia.html" class="tarjeta">
-
-                <div class="icono">🍽️</div>
-
-                <h3>Gastronomía</h3>
-
-                <p>
-                    Conoce los sabores y comidas de la zona.
-                </p>
-
-            </a>
-
-
-            <!-- EMPRENDIMIENTOS -->
-            <a href="emprendimientos.html" class="tarjeta">
-
-                <div class="icono">🛍️</div>
-
-                <h3>Emprendimientos</h3>
-
-                <p>
-                    Conoce los negocios y productos locales.
-                </p>
-
-            </a>
-
-
-            <!-- RUTAS -->
-            <a href="rutas.html" class="tarjeta">
-
-                <div class="icono">🗺️</div>
-
-                <h3>Rutas</h3>
-
-                <p>
-                    Encuentra información para planificar tu visita.
-                </p>
-
-            </a>
-
-
-        </div>
-
-    </section>
-
-
-    <!-- FRASE FINAL -->
-    <section class="frase-final">
-
-        <h2>¡Explora, conoce y disfruta Yura!</h2>
-
-        <p>
-            Descubre la riqueza natural, cultural y turística
-            de nuestro distrito.
-        </p>
-
-    </section>
-
-
-    <!-- PIE -->
-    <footer>
-
-        <h3>YURAEXPLORA</h3>
-
-        <p>Descubre la magia de Yura.</p>
-
-        <p>© 2026 YURAEXPLORA</p>
-
-    </footer>
+</footer>
 
 
 </body>
