@@ -11,15 +11,12 @@
 
     <style>
         body {
-            background-image: linear-gradient(
-                rgba(0, 0, 0, 0.35),
-                rgba(0, 0, 0, 0.35)
-            ),
-            url("imagenes/FONDO SECUNDARIO.jpeg");
+            margin: 0;
+            min-height: 100vh;
 
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
+            background:
+                linear-gradient(rgba(0,0,0,0.30), rgba(0,0,0,0.30)),
+                url("imagenes/PORTADA%204.jpeg") center center / cover no-repeat fixed;
         }
 
         .tarjeta {
@@ -29,12 +26,85 @@
         .tarjeta .contenido {
             padding: 20px;
         }
+
+        /* CELULAR */
+        @media (max-width: 768px) {
+
+            body {
+                background-attachment: scroll;
+            }
+
+            .navbar {
+                flex-direction: column;
+                padding: 15px 10px;
+            }
+
+            .logo {
+                font-size: 24px;
+                margin-bottom: 12px;
+            }
+
+            .menu {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 6px;
+                padding: 0;
+                margin: 0;
+            }
+
+            .menu li {
+                list-style: none;
+            }
+
+            .menu a {
+                display: block;
+                padding: 9px 10px;
+                font-size: 13px;
+            }
+
+            .presentacion {
+                padding: 35px 15px;
+            }
+
+            .presentacion h1 {
+                font-size: 34px;
+            }
+
+            .presentacion p {
+                font-size: 16px;
+            }
+
+            .tarjetas {
+                grid-template-columns: 1fr !important;
+                gap: 20px;
+                padding: 15px;
+            }
+
+            .tarjeta {
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            .frase-final {
+                padding: 30px 15px;
+                text-align: center;
+            }
+
+            footer {
+                padding: 25px 15px;
+                text-align: center;
+            }
+        }
     </style>
+
 </head>
 
 <body>
 
 <header>
+
     <nav class="navbar">
 
         <a href="index.html" class="logo">
@@ -42,14 +112,31 @@
         </a>
 
         <ul class="menu">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="lugares.html">Lugares</a></li>
-            <li><a href="gastronomia.html">Gastronomía</a></li>
-            <li><a href="emprendimientos.html">Emprendimientos</a></li>
-            <li><a href="rutas.html">Rutas</a></li>
+
+            <li>
+                <a href="index.html">Inicio</a>
+            </li>
+
+            <li>
+                <a href="lugares.html">Lugares</a>
+            </li>
+
+            <li>
+                <a href="gastronomia.html">Gastronomía</a>
+            </li>
+
+            <li>
+                <a href="emprendimientos.html">Emprendimientos</a>
+            </li>
+
+            <li>
+                <a href="rutas.html">Rutas</a>
+            </li>
+
         </ul>
 
     </nav>
+
 </header>
 
 
@@ -77,11 +164,13 @@
 
                 <h3>♨️ Ruta de los Baños</h3>
 
-                <p><strong>📍 Balneario de Yura</strong></p>
+                <p>
+                    <strong>📍 Balneario de Yura</strong>
+                </p>
 
                 <p>
                     Recorrido hacia los tradicionales
-                    pozos termomedicinales.
+                    pozos termomedicinales de Yura.
                 </p>
 
             </div>
@@ -97,7 +186,9 @@
 
                 <h3>🔥 Ruta de La Calera</h3>
 
-                <p><strong>📍 La Calera</strong></p>
+                <p>
+                    <strong>📍 La Calera</strong>
+                </p>
 
                 <p>
                     Ruta para conocer los antiguos
@@ -117,7 +208,9 @@
 
                 <h3>💧 Ruta de Capúa</h3>
 
-                <p><strong>📍 Capúa</strong></p>
+                <p>
+                    <strong>📍 Capúa</strong>
+                </p>
 
                 <p>
                     Recorrido hacia la Catarata de Capúa
@@ -137,11 +230,13 @@
 
                 <h3>⛪ Ruta de Yura Viejo</h3>
 
-                <p><strong>📍 Yura Viejo</strong></p>
+                <p>
+                    <strong>📍 Yura Viejo</strong>
+                </p>
 
                 <p>
-                    Permite conocer la Iglesia San Andrés
-                    y la antigua andenería.
+                    Permite conocer la Iglesia San Andrés,
+                    los andenes y otros atractivos.
                 </p>
 
             </div>
@@ -157,7 +252,9 @@
 
                 <h3>🏔️ Ruta de Coipata</h3>
 
-                <p><strong>📍 Coipata</strong></p>
+                <p>
+                    <strong>📍 Coipata</strong>
+                </p>
 
                 <p>
                     Recorrido hacia el Mirador de Coipata
@@ -175,9 +272,11 @@
 
             <div class="contenido">
 
-                <h3>📍 Circuito turístico</h3>
+                <h3>📍 Circuito turístico de Yura</h3>
 
-                <p><strong>📍 Distrito de Yura</strong></p>
+                <p>
+                    <strong>📍 Distrito de Yura</strong>
+                </p>
 
                 <p>
                     Recorrido por diferentes atractivos
@@ -199,7 +298,7 @@
     <h2>🥾 Explora Yura</h2>
 
     <p>
-        Elige tu ruta y descubre nuevos lugares.
+        Descubre sus paisajes, historia y atractivos turísticos.
     </p>
 
 </section>
@@ -209,9 +308,13 @@
 
     <h3>YURAEXPLORA</h3>
 
-    <p>Descubre la magia de Yura.</p>
+    <p>
+        Descubre la magia de Yura.
+    </p>
 
-    <p>© 2026 YURAEXPLORA</p>
+    <p>
+        © 2026 YURAEXPLORA
+    </p>
 
 </footer>
 
