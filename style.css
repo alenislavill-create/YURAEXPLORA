@@ -224,3 +224,114 @@ footer p {
     border-radius: 14px;
     margin-bottom: 18px;
 }
+/* ============================= */
+/* ADAPTACIÓN PARA CELULARES */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+    /* MENÚ */
+    .navbar {
+        flex-direction: column;
+        padding: 15px 10px;
+    }
+
+    .logo {
+        font-size: 24px;
+        margin-bottom: 12px;
+    }
+
+    .menu {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 6px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu li {
+        list-style: none;
+    }
+
+    .menu a {
+        display: block;
+        padding: 9px 10px;
+        font-size: 13px;
+    }
+
+
+    /* TÍTULOS */
+    .presentacion {
+        padding: 35px 15px;
+    }
+
+    .presentacion h1 {
+        font-size: 34px;
+    }
+
+    .presentacion p {
+        font-size: 16px;
+    }
+
+
+    /* TARJETAS */
+    .tarjetas {
+        grid-template-columns: 1fr !important;
+        gap: 20px;
+        padding: 15px;
+    }
+
+    .tarjeta {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .tarjeta img {
+        height: 200px;
+    }
+
+
+    /* INICIO */
+    .inicio {
+        min-height: 75vh;
+        padding: 25px 15px;
+    }
+
+    .contenido-inicio {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 25px 18px;
+        border-radius: 20px;
+    }
+
+    .contenido-inicio h1 {
+        font-size: 38px;
+    }
+
+    .contenido-inicio p {
+        font-size: 17px;
+    }
+
+
+    /* BOTONES DEL INICIO */
+    .botones {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .botones a {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 13px;
+    }
+
+
+    /* FOOTER */
+    footer {
+        padding: 25px 15px;
+        text-align: center;
+    }
+
+}
