@@ -8,182 +8,203 @@
     <title>Lugares turísticos | YURAEXPLORA</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        .tarjeta img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 15px 15px 0 0;
+            display: block;
+        }
+
+        .tarjeta {
+            overflow: hidden;
+        }
+
+        .tarjeta .contenido {
+            padding: 20px;
+        }
+    </style>
 </head>
 
 <body>
 
-    <!-- MENÚ -->
-    <header>
-        <nav class="navbar">
+<header>
+    <nav class="navbar">
 
-            <a href="index.html" class="logo">
-                YURAEXPLORA
-            </a>
+        <a href="index.html" class="logo">
+            YURAEXPLORA
+        </a>
 
-            <ul class="menu">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="lugares.html">Lugares</a></li>
-                <li><a href="gastronomia.html">Gastronomía</a></li>
-                <li><a href="emprendimientos.html">Emprendimientos</a></li>
-                <li><a href="rutas.html">Rutas</a></li>
-            </ul>
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="lugares.html">Lugares</a></li>
+            <li><a href="gastronomia.html">Gastronomía</a></li>
+            <li><a href="emprendimientos.html">Emprendimientos</a></li>
+            <li><a href="rutas.html">Rutas</a></li>
+        </ul>
 
-        </nav>
-    </header>
-
-
-    <!-- TÍTULO -->
-    <section class="presentacion">
-
-        <h1>Lugares turísticos de Yura</h1>
-
-        <p>
-            Descubre los paisajes naturales, históricos y culturales
-            que hacen de Yura un destino especial.
-        </p>
-
-    </section>
+    </nav>
+</header>
 
 
-    <!-- LUGARES -->
-    <section class="categorias">
+<section class="presentacion">
 
-        <div class="tarjetas">
+    <h1>Lugares turísticos</h1>
+
+    <p>
+        Conoce los principales atractivos turísticos de Yura.
+    </p>
+
+</section>
 
 
-            <!-- 1. POZOS TERMOMEDICINALES -->
-            <div class="tarjeta">
+<section class="categorias">
 
-                <div class="icono">♨️</div>
+    <div class="tarjetas">
 
-                <h3>Pozos Termomedicinales</h3>
+
+        <!-- IGLESIA -->
+
+        <div class="tarjeta">
+
+            <img src="imagenes/IGLESIA SAN ANDRES.jpeg"
+                 alt="Iglesia San Andrés de Yura">
+
+            <div class="contenido">
+
+                <h3>Iglesia San Andrés</h3>
+
+                <p><strong>📍 Yura Viejo</strong></p>
 
                 <p>
-                    Yura es reconocido por sus aguas termales y sus
-                    tradicionales pozos ubicados en el sector de Los Baños.
-                    Sus aguas presentan diferentes características y
-                    temperaturas, formando parte de la identidad turística
-                    del distrito.
+                    Iglesia colonial construida con sillar
+                    rosado y ubicada en la plaza principal.
                 </p>
 
             </div>
-
-
-            <!-- 2. CATARATA -->
-            <div class="tarjeta">
-
-                <div class="icono">💧</div>
-
-                <h3>Catarata de Corontorio o Capua</h3>
-
-                <p>
-                    Es una impresionante caída de agua de aproximadamente
-                    40 metros de altura, ubicada entre dos farallones.
-                    Se puede llegar mediante una caminata y disfrutar del
-                    paisaje natural del cañón de Corontorio.
-                </p>
-
-            </div>
-
-
-            <!-- 3. HORNOS DE CAL -->
-            <div class="tarjeta">
-
-                <div class="icono">🔥</div>
-
-                <h3>Hornos de Cal</h3>
-
-                <p>
-                    Ubicados en el sector de La Calera, estos antiguos
-                    hornos fueron utilizados para producir cal mediante
-                    la calcinación artesanal de piedra caliza. Esta
-                    actividad tuvo gran importancia en la historia y
-                    economía de Yura.
-                </p>
-
-            </div>
-
-
-            <!-- 4. IGLESIA -->
-            <div class="tarjeta">
-
-                <div class="icono">⛪</div>
-
-                <h3>Iglesia San Andrés de Yura</h3>
-
-                <p>
-                    Se encuentra en la plaza principal de Yura Viejo.
-                    Es un templo colonial construido en 1746 con sillar
-                    rosado y destaca por su arquitectura y decoración
-                    de estilo mestizo.
-                </p>
-
-            </div>
-
-
-            <!-- 5. ANDENERÍA -->
-            <div class="tarjeta">
-
-                <div class="icono">🌾</div>
-
-                <h3>Andenería Agrícola de Yura Viejo</h3>
-
-                <p>
-                    Son terrazas agrícolas de origen preincaico que
-                    muestran cómo las antiguas poblaciones aprovecharon
-                    el relieve de los cerros para desarrollar la
-                    agricultura. Algunas continúan siendo utilizadas
-                    actualmente.
-                </p>
-
-            </div>
-
-
-            <!-- 6. MIRADOR -->
-            <div class="tarjeta">
-
-                <div class="icono">🏔️</div>
-
-                <h3>Mirador de Coipata</h3>
-
-                <p>
-                    Es un mirador natural ubicado en la parte alta de
-                    la colina Coipata, en Yura Viejo. Desde allí se
-                    pueden apreciar el pueblo, la campiña, los andenes
-                    agrícolas y diversos paisajes de Yura.
-                </p>
-
-            </div>
-
 
         </div>
 
-    </section>
+
+        <!-- CATARATA -->
+
+        <div class="tarjeta">
+
+            <img src="imagenes/CATARATAS.jpeg"
+                 alt="Catarata de Capúa">
+
+            <div class="contenido">
+
+                <h3>Catarata de Capúa</h3>
+
+                <p><strong>📍 Capúa</strong></p>
+
+                <p>
+                    Caída de agua rodeada de farallones
+                    y paisajes naturales.
+                </p>
+
+            </div>
+
+        </div>
 
 
-    <!-- MENSAJE FINAL -->
-    <section class="frase-final">
+        <!-- HORNOS -->
 
-        <h2>🌿 Descubre Yura</h2>
+        <div class="tarjeta">
 
-        <p>
-            Cada lugar cuenta una parte de la historia,
-            naturaleza y cultura de nuestro distrito.
-        </p>
+            <img src="imagenes/HORNOS DE CAL.jpeg"
+                 alt="Hornos de Cal de Yura">
 
-    </section>
+            <div class="contenido">
+
+                <h3>Hornos de Cal</h3>
+
+                <p><strong>📍 La Calera</strong></p>
+
+                <p>
+                    Antiguos hornos utilizados tradicionalmente
+                    para la producción de cal.
+                </p>
+
+            </div>
+
+        </div>
 
 
-    <!-- PIE DE PÁGINA -->
-    <footer>
+        <!-- MIRADOR -->
 
-        <h3>YURAEXPLORA</h3>
+        <div class="tarjeta">
 
-        <p>Descubre la magia de Yura.</p>
+            <img src="imagenes/MIRADOR.jpeg"
+                 alt="Mirador de Coipata">
 
-        <p>© 2026 YURAEXPLORA</p>
+            <div class="contenido">
 
-    </footer>
+                <h3>Mirador de Coipata</h3>
+
+                <p><strong>📍 Coipata</strong></p>
+
+                <p>
+                    Mirador natural desde donde se puede
+                    apreciar el paisaje de Yura.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- ANDENES -->
+
+        <div class="tarjeta">
+
+            <img src="imagenes/ANDENES.jpeg"
+                 alt="Andenes de Yura Viejo">
+
+            <div class="contenido">
+
+                <h3>Andenería</h3>
+
+                <p><strong>📍 Yura Viejo</strong></p>
+
+                <p>
+                    Antiguas terrazas agrícolas utilizadas
+                    para el cultivo en las laderas.
+                </p>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<section class="frase-final">
+
+    <h2>🌿 Descubre Yura</h2>
+
+    <p>
+        Explora sus paisajes, historia y atractivos.
+    </p>
+
+</section>
+
+
+<footer>
+
+    <h3>YURAEXPLORA</h3>
+
+    <p>Descubre la magia de Yura.</p>
+
+    <p>© 2026 YURAEXPLORA</p>
+
+</footer>
 
 
 </body>
