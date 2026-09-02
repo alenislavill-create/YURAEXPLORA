@@ -1,17 +1,41 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Gastronomía | YURAEXPLORA</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        .tarjeta img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 15px 15px 0 0;
+            display: block;
+        }
+
+        .tarjeta {
+            overflow: hidden;
+        }
+
+        .tarjeta .contenido {
+            padding: 20px;
+        }
+    </style>
 </head>
 
 <body>
 
 <header>
     <nav class="navbar">
-        <a href="index.html" class="logo">YURAEXPLORA</a>
+
+        <a href="index.html" class="logo">
+            YURAEXPLORA
+        </a>
 
         <ul class="menu">
             <li><a href="index.html">Inicio</a></li>
@@ -20,60 +44,222 @@
             <li><a href="emprendimientos.html">Emprendimientos</a></li>
             <li><a href="rutas.html">Rutas</a></li>
         </ul>
+
     </nav>
 </header>
 
+
 <section class="presentacion">
+
     <h1>🍽️ Gastronomía</h1>
-    <p>Conoce algunos sabores y productos tradicionales de Yura.</p>
+
+    <p>
+        Conoce algunos alimentos y bebidas tradicionales.
+    </p>
+
 </section>
+
 
 <section class="categorias">
+
     <div class="tarjetas">
 
-        <div class="tarjeta">
-            <div class="icono">🧀</div>
-            <h3>Quesillo</h3>
-            <p>📍 Yura Viejo</p>
-            <p>Producto tradicional de la zona.</p>
-        </div>
+
+        <!-- QUESILLO -->
 
         <div class="tarjeta">
-            <div class="icono">🌽</div>
-            <h3>Tostado</h3>
-            <p>📍 Yura Viejo</p>
-            <p>Acompañamiento tradicional elaborado con maíz.</p>
+
+            <img src="imagenes/El-Quesillo.jpg"
+                 alt="Quesillo de Yura">
+
+            <div class="contenido">
+
+                <h3>Quesillo</h3>
+
+                <p><strong>📍 Yura Viejo</strong></p>
+
+                <p>
+                    Producto tradicional elaborado a base de leche,
+                    relacionado con la gastronomía de Yura Viejo.
+                </p>
+
+            </div>
+
         </div>
 
-        <div class="tarjeta">
-            <div class="icono">🍲</div>
-            <h3>Gastronomía regional</h3>
-            <p>📍 La Calera / Yura</p>
-            <p>Preparaciones tradicionales de la región.</p>
-        </div>
+
+        <!-- BEBIDAS -->
 
         <div class="tarjeta">
-            <div class="icono">🥤</div>
-            <h3>Bebidas tradicionales</h3>
-            <p>📍 Yura</p>
-            <p>Bebidas y preparaciones tradicionales.</p>
+
+            <img src="imagenes/BEBIDAS YURA.jpg"
+                 alt="Bebidas tradicionales de Yura">
+
+            <div class="contenido">
+
+                <h3>Bebidas tradicionales</h3>
+
+                <p><strong>📍 Yura</strong></p>
+
+                <p>
+                    Bebidas tradicionales que forman parte
+                    de la gastronomía local.
+                </p>
+
+            </div>
+
         </div>
 
+
+        <!-- MAIZ TOSTADO -->
+
         <div class="tarjeta">
-            <div class="icono">🍴</div>
-            <h3>Festi Yura</h3>
-            <p>📍 Yura</p>
-            <p>Actividad donde se promociona la gastronomía local.</p>
+
+            <img src="imagenes/MAIZ TOSTADO.jfif"
+                 alt="Maíz tostado">
+
+            <div class="contenido">
+
+                <h3>Maíz tostado</h3>
+
+                <p><strong>📍 Yura Viejo</strong></p>
+
+                <p>
+                    Preparación tradicional a base de maíz,
+                    utilizada como acompañamiento.
+                </p>
+
+            </div>
+
         </div>
+
+
+        <!-- TIMBUSCA -->
+
+        <div class="tarjeta">
+
+            <div class="contenido">
+
+                <h3>🍲 Timpusca</h3>
+
+                <p><strong>📍 Yura</strong></p>
+
+                <p>
+                    Preparación tradicional de la gastronomía
+                    arequipeña, conocida por su caldo sustancioso.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- CHARQUI -->
+
+        <div class="tarjeta">
+
+            <div class="contenido">
+
+                <h3>🥩 Charqui</h3>
+
+                <p><strong>📍 Yura</strong></p>
+
+                <p>
+                    Carne conservada mediante un proceso tradicional
+                    de secado.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- CHANFAINITA -->
+
+        <div class="tarjeta">
+
+            <div class="contenido">
+
+                <h3>🍲 Chanfainita</h3>
+
+                <p><strong>📍 Yura</strong></p>
+
+                <p>
+                    Plato tradicional preparado con ingredientes
+                    propios de la cocina peruana.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- CHICHA -->
+
+        <div class="tarjeta">
+
+            <div class="contenido">
+
+                <h3>🥤 Chicha</h3>
+
+                <p><strong>📍 Yura</strong></p>
+
+                <p>
+                    Bebida tradicional preparada a base de
+                    cereales y consumida en diferentes ocasiones.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- PONCHE -->
+
+        <div class="tarjeta">
+
+            <div class="contenido">
+
+                <h3>🍵 Ponche</h3>
+
+                <p><strong>📍 Yura</strong></p>
+
+                <p>
+                    Bebida tradicional que forma parte de las
+                    preparaciones ofrecidas en la zona.
+                </p>
+
+            </div>
+
+        </div>
+
 
     </div>
+
 </section>
 
+
+<section class="frase-final">
+
+    <h2>🍴 Sabores de Yura</h2>
+
+    <p>
+        Conoce y disfruta sus productos y preparaciones tradicionales.
+    </p>
+
+</section>
+
+
 <footer>
+
     <h3>YURAEXPLORA</h3>
+
     <p>Descubre la magia de Yura.</p>
+
     <p>© 2026 YURAEXPLORA</p>
+
 </footer>
+
 
 </body>
 </html>
