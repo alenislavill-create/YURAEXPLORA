@@ -10,6 +10,15 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+
+            background:
+                linear-gradient(rgba(0,0,0,0.30), rgba(0,0,0,0.30)),
+                url("imagenes/PORTADA%203.jpeg") center center / cover no-repeat fixed;
+        }
+
         .tarjeta img {
             width: 100%;
             height: 220px;
@@ -24,6 +33,81 @@
 
         .tarjeta .contenido {
             padding: 20px;
+        }
+
+        /* ADAPTACIÓN PARA CELULAR */
+        @media (max-width: 768px) {
+
+            body {
+                background-attachment: scroll;
+            }
+
+            .navbar {
+                flex-direction: column;
+                padding: 15px 10px;
+            }
+
+            .logo {
+                font-size: 24px;
+                margin-bottom: 12px;
+            }
+
+            .menu {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 6px;
+                padding: 0;
+                margin: 0;
+            }
+
+            .menu li {
+                list-style: none;
+            }
+
+            .menu a {
+                display: block;
+                padding: 9px 10px;
+                font-size: 13px;
+            }
+
+            .presentacion {
+                padding: 35px 15px;
+            }
+
+            .presentacion h1 {
+                font-size: 34px;
+            }
+
+            .presentacion p {
+                font-size: 16px;
+            }
+
+            .tarjetas {
+                grid-template-columns: 1fr !important;
+                gap: 20px;
+                padding: 15px;
+            }
+
+            .tarjeta {
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            .tarjeta img {
+                height: 200px;
+            }
+
+            .frase-final {
+                padding: 30px 15px;
+                text-align: center;
+            }
+
+            footer {
+                padding: 25px 15px;
+                text-align: center;
+            }
         }
     </style>
 </head>
@@ -64,9 +148,7 @@
 
     <div class="tarjetas">
 
-
         <!-- QUESILLO -->
-
         <div class="tarjeta">
 
             <img src="imagenes/El-Quesillo.jpg"
@@ -89,10 +171,9 @@
 
 
         <!-- BEBIDAS -->
-
         <div class="tarjeta">
 
-            <img src="imagenes/BEBIDAS YURA.jpg"
+            <img src="imagenes/BEBIDAS%20YURA.jpg"
                  alt="Bebidas tradicionales de Yura">
 
             <div class="contenido">
@@ -111,11 +192,10 @@
         </div>
 
 
-        <!-- MAIZ TOSTADO -->
-
+        <!-- MAÍZ TOSTADO -->
         <div class="tarjeta">
 
-            <img src="imagenes/MAIZ TOSTADO.jfif"
+            <img src="imagenes/MAIZ%20TOSTADO.jfif"
                  alt="Maíz tostado">
 
             <div class="contenido">
@@ -135,7 +215,6 @@
 
 
         <!-- TIMBUSCA -->
-
         <div class="tarjeta">
 
             <div class="contenido">
@@ -155,7 +234,6 @@
 
 
         <!-- CHARQUI -->
-
         <div class="tarjeta">
 
             <div class="contenido">
@@ -175,7 +253,6 @@
 
 
         <!-- CHANFAINITA -->
-
         <div class="tarjeta">
 
             <div class="contenido">
@@ -195,7 +272,6 @@
 
 
         <!-- CHICHA -->
-
         <div class="tarjeta">
 
             <div class="contenido">
@@ -215,7 +291,6 @@
 
 
         <!-- PONCHE -->
-
         <div class="tarjeta">
 
             <div class="contenido">
@@ -232,7 +307,6 @@
             </div>
 
         </div>
-
 
     </div>
 
